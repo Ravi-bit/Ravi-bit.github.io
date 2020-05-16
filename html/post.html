@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--This div is used to display my page as inline-block so that it increases its size with respect to comments-->
+    <div class="bg1">
+        
+       <!--Header part which contains heading,subheading and Sign Up,Sign In buttons-->
+       <header class="postheader">
+           <div>
+               <span class="scribble">ScriBBler</span>
+               <button class="right" onclick="signingin()">Sign In</button>
+               <button class="right" onclick="signingup()">Sign Up</button>
+               <br>
+               <span class="subheading">Explore, Imagine, Create</span>
+            </div>
+        </header>
+
+        <!-- This div part is to display Sign In dialog box if user clicks Sign In button-->
+        <div id="myModal1" class="modal">
+            <div class="model-content1">
+                <div class="headingcontainer">
+                    <span class="formheading">Welcome Back!</span>
+                    <span class="close">&times;</span>
+                    <hr>
+                </div>
+                <div class="formcontainer">
+                    <form class="formsign">
+                         <label class="labels">Username</label><br>
+                         <input class="inputs" type="text" placeholder="Enter your username" value=""  required>
+                         <label class="labels">Password</label><br>
+                         <input class="inputs" type="password" placeholder="Enter your password" value="" required>
+                    </form>
+                  <button  class="subBtn">Sign In</button>
+                </div>
+
+                <!--This part will take up to the Sign Up dialog box -->
+                <div id="Goto">
+                    <span><b>Not a member?</b><a class="signuplink" id="gotosignup2"> Sign Up</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- This div part is to display Sign Up dialog box if user clicks Sign Up button-->
+        <div id="myModal2" class="modal">
+            <div class="model-content2">
+                <div class="headingcontainer">
+                    <span class="formheading">Get Started</span>
+                    <span class="close">&times;</span>
+                   <hr>
+                </div>
+                <div class="formcontainer">
+                    <form class="formsign">
+                         <label class="labels">Name</label><br>
+                         <input class="inputs" type="text" placeholder="Enter your name" value=""  required>
+                         <label class="labels">Username</label><br>
+                         <input class="inputs" type="text" placeholder="Enter your username" value=""  required>
+                         <label class="labels">Password</label><br>
+                         <input class="inputs" type="password" placeholder="Enter your password" value="" required>
+                         <label class="labels">Confirm Password</label><br>
+                         <input class="inputs" type="password" placeholder="Re-enter your password" value="" required>
+                    </form>
+                   <button  class="subBtn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <!--This div contains Post's heading,Username and the content. Also it contains like edit,like,comment buttons -->
+        <div class="centering">
+
+            <!--This div is for heading-->
+            <div id="putheading"></div>
+
+            <!--This div contains Username, edit and save buttons-->
+            <div style="margin-top: 2%;">
+                <span id="putname"></span>
+                <span id="editbutton" class="putbutton" onclick="editing(this.id)">
+                     <button id="editbutton" class="putbutton1">Edit <span><i class="fa fa-pencil-square-o"></i></span></button>
+                </span>
+                <span id="savebutton" class="putbutton" onclick="Saving(this.id)">
+                     <button class="putbutton1">Save <span><i class="fa fa-floppy-o"></i></span></button>
+                 </span>
+            </div>
+
+            <!--This div contains the content of the psot-->
+            <div id="putcontent">
+                <p id="actualcontent"></p>
+            </div>
+
+            <!--This div contains the like button and the like count -->
+            <div id="likearea">
+                <button id="giveLike" onclick="liking()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span id="fonting"> Like</span></button>
+                <p id="likecount">Be the first one to like this!</p>
+            </div>
+
+            <!--Text area will be there to put a comment -->
+            <textarea id="putcomment" class="putcommentarea" placeholder="Leave a comment..." rows="5" value=""></textarea>
+
+            <!--Comment button-->
+            <button id="cmnt-btn" onclick="commenting(putcomment)">Comment</button>
+            <p style="font-weight: bold; margin-bottom: 5px;">All Comments</p>
+
+            <!-- This section contains all the comments that are commmented on that post -->
+            <section id="cmntdec1">
+                 <div class="cmntdiv" id="cmntdec"></div>
+            </section>
+        </div>
+    </div>
+    <script src="../scripts/post.js"></script>
+    <script src="../scripts/common.js"></script>
+</body>
+</html>
