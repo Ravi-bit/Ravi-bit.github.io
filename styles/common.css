@@ -1,0 +1,187 @@
+/*Styling for header*/
+header{
+  height:20%;
+}
+
+/*Styling for heading*/
+.scribble{
+  font-family: 'Montez', cursive;
+  color:blue;
+  font-size: 28px;
+}
+
+/*Styling for sub-heading*/
+.subheading{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 17px;
+}
+
+/*Styling for Sign In and Sign Up buttons*/
+.right{
+  float:right;
+  background-color: blue;
+  padding:8px 8px 8px 8px;
+  margin-left:10px;
+  margin-top: 10px;
+  margin-right: 2px;
+  border-top:0.5px;
+  border-right: 0.5px;
+  width:100px;
+  color:white;
+  outline:none;
+}
+
+/*Styling for dialog-boxes*/
+.modal{
+  display: none; 
+  position:fixed;
+  z-index: 1; 
+  padding-top: 120px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+/*Styling for Sign In dialog box*/
+.model-content1 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  height:50%;
+  border-radius: 10px;
+}
+
+/*Styling for Sign Up dialog box*/
+.model-content2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  height:70%;
+  border-radius: 10px;
+}
+
+/*Styling for Craete post dialog box*/
+.model-content3 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 73%;
+  height:70%;
+  border-radius: 10px;
+}
+
+/*Styling for close(x)*/
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Styling of forms of Sign Up and Sign In*/
+.formsign{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.formheading{
+  padding-left: 5px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: grey;
+}
+.formcontainer{
+  border-bottom: 10px;
+  border-color: grey;
+}
+.labels{
+  font-size: 23px;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-left: 3px;
+}
+.inputs{
+  padding:16px 16px 16px 16px;
+  background-color: lightgray;
+  border:0px;
+  border-radius: 1%;
+  margin-bottom: 10px;
+}
+.inputs1{
+  padding:12px 12px 12px 12px;
+  background-color: lightgray;
+  border:0px;
+  margin-bottom: 10px;
+}
+.headingcontainer{
+  margin-bottom: 10px;
+}
+.formcontainer{
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/*Styling for Sign Up and Sign In buttons in a form*/
+.subBtn{
+  margin-top: 30px;
+  margin-bottom: 5px;
+  background-color:rgba(28, 189, 28, 0.836);
+  width:100%;
+  padding: 12px 12px 12px 12px;
+  border: 0px;
+  font-size: 15px;
+  color: white;
+  font-family: sans-serif;
+  outline: none;
+}
+#Goto{
+  margin-top: 30px;
+  text-align: center;
+}
+.signuplink{
+  color:blue;
+}
+.signuplink:hover,
+.signuplink:focus{
+  cursor: pointer;
+}
+.buttonarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Styling for create button in Create post dialog-box*/ 
+.createBtn{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 44%;
+  margin-right: 44%;
+  background-color:rgba(28, 189, 28, 0.836);
+  padding: 10px 10px 10px 10px;
+  border: 0px;
+  font-size: 15px;
+  color: white;
+  font-family: sans-serif;
+}
+.right:hover,
+.right:focus{
+ -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.349);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.466);
+}
+
