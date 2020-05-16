@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- This div is for to put all the items in the home page with 100% width and 100% height-->
+    <div class="bg"> 
+
+        <!-- Header part includes heading sign up and sign in -->   
+        <header>
+            <div>
+                <span class="scribble">ScriBBler</span>
+                <button class="right" onclick="signingin()">Sign In</button>
+                <button class="right" onclick="signingup()">Sign Up</button>
+                <br>
+                <span class="subheading">Explore, Imagine, Create</span>
+            </div>
+            
+        </header>
+
+        <!-- This div is for create post and All posts -->
+        <div id="posts">
+            <button id="post-1" onclick="openpage()">All Posts</button>
+            <button id="post-2" onclick="creatingPost()">Create Post</button>
+        </div>
+
+        <!--This div part is to display Sign In dialog box if user clicks Sign In button-->
+        <div id="myModal1" class="modal">
+                <div class="model-content1">
+                    <div class="headingcontainer">
+                        <span class="formheading">Welcome Back!</span>
+                        <span class="close">&times;</span>
+                        <hr>
+                    </div>
+                    <div class="formcontainer">
+                        <form class="formsign">
+                          <label class="labels">Username</label><br>
+                          <input class="inputs" type="text" placeholder="Enter your username" value=""  required>
+                          <label class="labels">Password</label><br>
+                          <input class="inputs" type="password" placeholder="Enter your password" value="" required>
+                        </form>
+                          <button  class="subBtn">Sign In</button>
+                    </div>
+
+                    <!--This part will take up to the Sign Up dialog box if user clicks Sign Up button-->
+                    <div id="Goto">
+                          <span><b>Not a member?</b><a class="signuplink" id="gotosignup"> Sign Up</a></span>
+                    </div>
+                </div>
+        </div>
+
+        <!--This div part is to display Sign Up dialog box-->
+        <div id="myModal2" class="modal">
+            <div class="model-content2">
+                <div class="headingcontainer">
+                    <span class="formheading">Get Started</span>
+                    <span class="close">&times;</span>
+                    <hr>
+                </div>
+                <div class="formcontainer">
+                    <form class="formsign">
+                      <label class="labels">Name</label><br>
+                      <input class="inputs" type="text" placeholder="Enter your name" value=""  required>
+                      <label class="labels">Username</label><br>
+                      <input class="inputs" type="text" placeholder="Enter your username" value=""  required>
+                      <label class="labels">Password</label><br>
+                      <input class="inputs" type="password" placeholder="Enter your password" value="" required>
+                      <label class="labels">Confirm Password</label><br>
+                      <input class="inputs" type="password" placeholder="Re-enter your password" value="" required>
+                    </form>
+                      <button  class="subBtn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!--This div part is to display Create Post dialog box-->
+        <div id="myModal3" class="modal">
+            <div class="model-content3">
+                <div class="headingcontainer">
+                    <span class="formheading">Pen Your Post</span>
+                    <span id="closingCreate" class="close">&times;</span>
+                    <hr>
+                </div>
+                <div class="formcontainer">
+                    <form class="formsign">
+                      <label class="labels">Title</label><br>
+                      <input class="inputs1" type="text" placeholder="Enter title of your post" value=""  required>
+                      <label class="labels">Contents</label><br>
+                      <textarea class="inputs1" placeholder="Enter the contents of your post" rows="15"></textarea>  
+                    </form>
+                    <div class="buttonarea">
+                      <button  class="createBtn">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
