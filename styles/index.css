@@ -24,25 +24,27 @@ html,body{
 
 /*Styling for All posts button*/
 #post-1{
-  width:6%;
+  width:7%;
   overflow: hidden;
   margin-left: 9px; 
-  padding:5px 7px 5px 7px;
-  border:0px 0.1px 0.1px 0px;
+  padding:7px 4px 7px 4px;
+  border:1px 0px;
+  border-color: rgb(180, 180, 180);
   background-color: rgb(179, 163, 19);
   backface-visibility: hidden;
-  outline:none;
+  outline: none;
 }
 
 /*Styling for create Post button*/
 #post-2{
-  width:6%;
+  width:7%;
   overflow: hidden;
   margin-left: 9px; 
-  padding:5px 7px 5px 7px;
-  border:0px 0.1px 0.1px 0px;
+  padding:7px 4px 7px 4px;
+  outline:none;
+  border:1px 0px;
+  border-color: rgb(180, 180, 180);
   background-color:  rgb(179, 163, 19);
   backface-visibility: hidden;
-  outline:none;
 }
                                                                                                  
