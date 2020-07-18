@@ -42,19 +42,27 @@ window.onload=function(){
 /*JavaScript function for commenting on a post*/
 var CmntMatter;
 function commenting(TextId){
+    var Hasspace=false;
     CmntMatter = TextId.value;
     var a = CmntMatter.length;
     console.log(a);
     console.log(CmntMatter); 
-    if(a>0){
-          var a = document.getElementById("putcomment");
+    if(a==1){
+        var b=CmntMatter.charCodeAt(0);
+        if(b==32){
+            Hasspace=true;
+        }
+    }
+    var def = document.getElementById("putcomment");
+    if(a>0 && !Hasspace){
           document.getElementById("cmntdec1").style.display = "block"
           var temp = '<div class="cmnt">' + CmntMatter + '</div>';
          document.getElementById("cmntdec").innerHTML += temp;     
-         a.value = a.defaultValue;
+         def.value = def.defaultValue;
     }
     else{
-        alert("Enter some content in the textarea");
+        alert("Enter some content in the textarea with no spaces");
+        def.value = def.defaultValue;
     }       
 }
 
